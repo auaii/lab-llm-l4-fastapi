@@ -12,7 +12,7 @@ from openai import AsyncOpenAI
 load_dotenv()
 client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-app = FastAPI()
+app = FastAPI() # ทำให้เเอป
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
